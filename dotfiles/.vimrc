@@ -22,7 +22,7 @@ call plug#end()
 let g:sonokai_style = 'atlantis'
 let g:sonokai_better_performance = 1
 let g:sonokai_disable_italic_comment = 1
-colorscheme sonokai
+silent! colorscheme sonokai
 
 
 " basic settings

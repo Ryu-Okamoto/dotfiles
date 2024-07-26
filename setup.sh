@@ -1,6 +1,6 @@
 #!/bin/sh
 
-function __link() {
+__link() {
     [ -L "$2" ] && unlink "$2"
     ln -s "$1" "$2" && echo "linked: $1 -> $2" >&2
 }
