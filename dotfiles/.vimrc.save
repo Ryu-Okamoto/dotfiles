@@ -1,0 +1,35 @@
+if empty(glob('~/.vim/colors/sonokai.vim'))
+  silent !curl -fLo ~/.vim/colors/sonokai.vim --create-dirs
+    \ https://raw.githubusercontent.com/sainnhe/sonokai/master/colors/sonokai.vim
+    \ >/dev/nendif
+colorscheme sonokai
+let g:sonokai_override {
+\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+\    
+
+
+
+
+
+
+set fenc=utf-8
+set autoread
+set number
+set showmatch
+syntax enable
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" imashime
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
+" benri
+inoremap jj <ESC>
