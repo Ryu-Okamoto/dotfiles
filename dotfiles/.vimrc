@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 
@@ -24,6 +25,17 @@ let g:sonokai_better_performance = 1
 let g:sonokai_disable_italic_comment = 1
 silent! colorscheme sonokai
 
+" start NERDTree automatically
+" autocmd VimEnter * NERDTree | wincmd p
+let NERDTreeShowHidden = 1
+nnoremap ff :NERDTree<CR> 
+
+" settings for complementation
+set completeopt=menuone,noinsert
+inoremap <expr><CR> pumvisible()? "<C-y>" : "<CR>"
+inoremap <expr><C-n> pumvisible()? "<Down>" : "<C-n>"
+inoremap <expr><Tab> pumvisible()? "<Down>" : "<Tab>"
+inoremap <expr><C-p> pumvisible()? "<Up>" : "<C-p>"
 
 " basic settings
 set autoread
