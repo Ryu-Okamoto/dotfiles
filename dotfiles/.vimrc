@@ -16,6 +16,9 @@ Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'tyru/open-browser.vim'
+Plug 'previm/previm'
 call plug#end()
 
 
@@ -29,6 +32,9 @@ silent! colorscheme sonokai
 " autocmd VimEnter * NERDTree | wincmd p
 let NERDTreeShowHidden = 1
 nnoremap ff :NERDTree<CR> 
+
+" keymap for previm
+nnoremap <C-p> :PrevimOpen<CR>
 
 " settings for complementation
 set completeopt=menuone,noinsert
