@@ -8,7 +8,7 @@ __link() {
 dotfiles_root=$(cd $(dirname $0) && pwd)/dotfiles
 cd ${dotfiles_root}
 
-dotfiles=`ls -a | grep -E '^\.[^.]+'` 
+dotfiles=`ls -a | grep -E '^\.[^.]\s*'` 
 for dotfile in $dotfiles
 do
     full_path="$dotfiles_root/$dotfile" 
