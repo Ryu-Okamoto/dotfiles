@@ -31,7 +31,7 @@ silent! colorscheme sonokai
 " start NERDTree automatically
 " autocmd VimEnter * NERDTree | wincmd p
 let NERDTreeShowHidden = 1
-nnoremap ff :NERDTree<CR> 
+nnoremap ff :NERDTreeToggle<CR> 
 
 " keymap for previm
 nnoremap <C-p> :PrevimOpen<CR>
