@@ -30,7 +30,7 @@ Plug 'tyru/open-browser.vim'
 Plug 'previm/previm'
 
 " language server 
-" open a file with a supported filetype and command :LspInstall
+" open a file with a supported filetype and command :LspInstallServer
 " ref. https://github.com/mattn/vim-lsp-settings
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
